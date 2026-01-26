@@ -15,7 +15,7 @@ const Contact = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                            Ready to Transform Your <br /> Deal Lifecycle?
+                            Ready to Transform Your Deal Lifecycle?
                         </h2>
                         <p className="text-slate-400 text-lg md:text-xl max-w-md">
                             Contact our team to request a personalized demo of the platform.
