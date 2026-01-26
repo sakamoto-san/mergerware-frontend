@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+
+  --color-midnight-navy: #050A14;
+  --color-glass-slate: rgba(30, 41, 59, 0.4);
+  --color-electric-cyan: #00D2FF;
+  --color-cyan-glow: rgba(0, 210, 255, 0.5);
+  --color-slate-400: #94A3B8;
+  --color-slate-300: #CBD5E1;
+
+  --background-image-hero-radial: radial-gradient(circle at 50% 0%, rgba(0, 210, 255, 0.15) 0%, rgba(5, 10, 20, 0) 60%);
+  --background-image-card-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+
+  --backdrop-blur-glass: 12px;
+  --backdrop-blur-deep: 20px;
+
+  --shadow-glow-sm: 0 0 10px rgba(0, 210, 255, 0.3);
+  --shadow-glow-md: 0 0 20px rgba(0, 210, 255, 0.4);
+  --shadow-glow-lg: 0 0 40px rgba(0, 210, 255, 0.5);
+
+  --animate-spotlight: spotlight 2s ease .75s 1 forwards;
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee2: marquee2 25s linear infinite;
+
+  @keyframes spotlight {
+    0% {
+      opacity: 0;
+      transform: translate(-72%, -62%) scale(0.5);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -40%) scale(1);
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+/* Fallback/Correction for any custom classes used that might not auto-generate if not in @theme */
+@utility bg-hero-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(20, 30, 48, 1) 0%, rgba(5, 10, 20, 1) 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-midnight-navy);
+  color: white;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@utility animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+@utility animation-delay-4000 {
+  animation-delay: 4s;
+}
