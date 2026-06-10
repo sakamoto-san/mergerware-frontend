@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="absolute inset-0 top-0 left-0 w-full h-[75%] -z-10 bg-mesh-gradient opacity-90" />
 
             {/* Subtle hairline grid lines overlay */}
-            <div className="absolute inset-0 -z-20 bg-[linear-gradient(to_right,rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+            <div className="absolute inset-0 -z-20 bg-[linear-gradient(to_right,var(--grid-line-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--grid-line-color)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
 
             <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -37,7 +37,7 @@ const Hero = () => {
                                 href="#demo"
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="bg-primary text-on-primary hover:bg-black/90 px-8 py-3.5 rounded-full text-sm font-medium transition-all duration-300 shadow-level-3 text-center"
+                                className="bg-primary text-on-primary hover:bg-primary/90 px-8 py-3.5 rounded-full text-sm font-medium transition-all duration-300 shadow-level-3 text-center"
                             >
                                 Request Demo
                             </motion.a>

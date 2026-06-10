@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -46,17 +46,32 @@ const Navbar = () => {
                                 </a>
                             ))}
                             <span className="h-4 w-px bg-hairline mx-2" />
+                            <button
+                                onClick={toggleTheme}
+                                className="p-2 rounded-sm text-body hover:text-ink hover:bg-canvas-soft-2 focus:outline-none cursor-pointer flex items-center justify-center transition-colors duration-200"
+                                aria-label="Toggle Theme"
+                            >
+                                {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+                            </button>
+                            <span className="h-4 w-px bg-hairline mx-2" />
                             <a
                                 href="#demo"
-                                className="bg-primary text-on-primary hover:bg-black/90 px-4 py-1.5 rounded-sm text-sm font-medium transition-colors duration-200 shadow-level-1 inline-flex items-center justify-center h-8"
+                                className="bg-primary text-on-primary hover:bg-primary/90 px-4 py-1.5 rounded-sm text-sm font-medium transition-colors duration-200 shadow-level-1 inline-flex items-center justify-center h-8"
                             >
                                 Request Demo
                             </a>
                         </div>
                     </div>
 
-                    {/* Mobile menu button */}
-                    <div className="-mr-2 flex xl:hidden">
+                    {/* Mobile menu button and theme toggle */}
+                    <div className="-mr-2 flex items-center gap-2 xl:hidden">
+                        <button
+                            onClick={toggleTheme}
+                            className="p-2 rounded-sm text-body hover:text-ink hover:bg-canvas-soft-2 focus:outline-none cursor-pointer"
+                            aria-label="Toggle Theme"
+                        >
+                            {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+                        </button>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="inline-flex items-center justify-center p-2 rounded-sm text-body hover:text-ink hover:bg-canvas-soft-2 focus:outline-none"

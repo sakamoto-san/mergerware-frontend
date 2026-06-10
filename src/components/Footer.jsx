@@ -68,7 +68,7 @@ const Footer = () => {
                                     placeholder="Email Address"
                                     className="bg-canvas border border-hairline text-ink text-sm px-4 py-2 rounded-sm w-full focus:outline-none focus:border-link focus:ring-1 focus:ring-link placeholder-mute h-10 transition-colors"
                                 />
-                                <button className="bg-primary text-on-primary text-sm font-medium px-4 py-2 rounded-sm hover:bg-black/90 transition-colors h-10 shadow-level-1 cursor-pointer">
+                                <button className="bg-primary text-on-primary text-sm font-medium px-4 py-2 rounded-sm hover:bg-primary/90 transition-colors h-10 shadow-level-1 cursor-pointer">
                                     Subscribe
                                 </button>
                             </div>

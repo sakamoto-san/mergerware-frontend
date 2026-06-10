@@ -10,7 +10,7 @@ const stats = [
 
 const Stats = () => {
     return (
-        <section className="py-24 bg-primary text-on-primary relative overflow-hidden border-y border-hairline-strong/20">
+        <section className="py-24 bg-[#171717] text-white relative overflow-hidden border-y border-neutral-800">
             {/* Subtle mesh atmospheric backdrop inside the dark band */}
             <div className="absolute inset-0 top-0 left-0 w-full h-full -z-10 opacity-30 bg-gradient-to-br from-violet/20 via-transparent to-cyan/10" />
 
@@ -27,7 +27,7 @@ const Stats = () => {
                         >
                             <div className="mb-3 flex justify-center items-baseline">
                                 <motion.span
-                                    className="text-5xl md:text-6xl font-semibold text-on-primary tracking-tighter"
+                                    className="text-5xl md:text-6xl font-semibold text-white tracking-tighter"
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 0.8, delay: 0.2 + (index * 0.08) }}
@@ -36,8 +36,8 @@ const Stats = () => {
                                 </motion.span>
                                 <span className="text-2xl md:text-3xl font-mono text-cyan ml-0.5">{stat.suffix}</span>
                             </div>
-                            <h4 className="text-xs font-mono uppercase tracking-wider text-mute mb-2">{stat.label}</h4>
-                            <p className="text-xs text-mute max-w-[160px] mx-auto leading-relaxed font-light">
+                            <h4 className="text-xs font-mono uppercase tracking-wider text-neutral-400 mb-2">{stat.label}</h4>
+                            <p className="text-xs text-neutral-400 max-w-[160px] mx-auto leading-relaxed font-light">
                                 {stat.description}
                             </p>
                         </motion.div>

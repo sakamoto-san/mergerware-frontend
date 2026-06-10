@@ -74,7 +74,7 @@ const Contact = () => {
 
                             <button
                                 type="submit"
-                                className="w-full bg-primary text-on-primary font-medium rounded-sm hover:bg-black/90 transition-colors mt-6 shadow-level-2 cursor-pointer h-10 text-sm"
+                                className="w-full bg-primary text-on-primary font-medium rounded-sm hover:bg-primary/90 transition-colors mt-6 shadow-level-2 cursor-pointer h-10 text-sm"
                             >
                                 Submit Request
                             </button>

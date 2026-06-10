@@ -34,7 +34,7 @@ export const GlowingCard = ({ children, className = "" }) => {
                 className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
                 style={{
                     opacity,
-                    background: `radial-gradient(400px circle at ${position.x}px ${position.y}px, rgba(0, 112, 243, 0.035), transparent 45%)`,
+                    background: `radial-gradient(400px circle at ${position.x}px ${position.y}px, rgba(0, 112, 243, var(--glow-opacity)), transparent 45%)`,
                 }}
             />
             <div className="relative h-full z-10">{children}</div>
