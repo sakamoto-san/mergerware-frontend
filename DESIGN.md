@@ -1,105 +1,134 @@
 ---
 version: alpha
-name: Notion Analysis
-description: An analysis of Notion's design language — a warm, paper-calm productivity system built on an off-white canvas, near-black Inter type, and a single confident blue, punctuated by a playful multi-color sticker palette that does all the personality work while the chrome stays quiet.
+name: Vercel-design-analysis
+description: An inspired interpretation of Vercel's design language — a developer-platform brand whose surface is a stark black-and-ink duet on near-white canvas, broken at hero scale by a multi-color mesh gradient (cyan / blue / magenta / amber) that acts as the entire decorative system, paired with a custom geometric sans for headlines and a monospaced caption face for technical labels.
 
 colors:
-  primary: "#0075de"
-  primary-active: "#005bab"
-  secondary: "#213183"
+  primary: "#171717"
   on-primary: "#ffffff"
+  ink: "#171717"
+  body: "#4d4d4d"
+  mute: "#888888"
+  hairline: "#ebebeb"
+  hairline-strong: "#a1a1a1"
   canvas: "#ffffff"
-  canvas-soft: "#f6f5f4"
-  surface: "#ffffff"
-  ink: "#000000"
-  ink-secondary: "#31302e"
-  ink-muted: "#615d59"
-  ink-faint: "#a39e98"
-  hairline: "#e6e6e6"
-  accent-sky: "#62aef0"
-  accent-purple: "#d6b6f6"
-  accent-purple-deep: "#391c57"
-  accent-pink: "#ff64c8"
-  accent-orange: "#dd5b00"
-  accent-orange-deep: "#793400"
-  accent-teal: "#2a9d99"
-  accent-green: "#1aae39"
-  accent-brown: "#523410"
+  canvas-soft: "#fafafa"
+  canvas-soft-2: "#f5f5f5"
+  link: "#0070f3"
+  link-deep: "#0761d1"
+  link-bg-soft: "#d3e5ff"
+  success: "#0070f3"
+  error: "#ee0000"
+  error-soft: "#f7d4d6"
+  error-deep: "#c50000"
+  warning: "#f5a623"
+  warning-soft: "#ffefcf"
+  warning-deep: "#ab570a"
+  violet: "#7928ca"
+  violet-soft: "#d8ccf1"
+  violet-deep: "#4c2889"
+  cyan: "#50e3c2"
+  cyan-soft: "#aaffec"
+  cyan-deep: "#29bc9b"
+  highlight-pink: "#ff0080"
+  highlight-magenta: "#eb367f"
+  gradient-develop-start: "#007cf0"
+  gradient-develop-end: "#00dfd8"
+  gradient-preview-start: "#7928ca"
+  gradient-preview-end: "#ff0080"
+  gradient-ship-start: "#ff4d4d"
+  gradient-ship-end: "#f9cb28"
+  selection-bg: "#171717"
+  selection-fg: "#f2f2f2"
 
 typography:
-  display-1:
-    fontFamily: NotionInter
-    fontSize: 64px
-    fontWeight: 700
-    lineHeight: 1.0
-    letterSpacing: -2.125px
-  display-2:
-    fontFamily: NotionInter
-    fontSize: 54px
-    fontWeight: 700
-    lineHeight: 1.04
-    letterSpacing: -1.875px
-  heading-1:
-    fontFamily: NotionInter
-    fontSize: 40px
-    fontWeight: 700
-    lineHeight: 1.1
-    letterSpacing: -1px
-  heading-2:
-    fontFamily: NotionInter
-    fontSize: 26px
-    fontWeight: 700
-    lineHeight: 1.23
-    letterSpacing: -0.625px
-  heading-3:
-    fontFamily: NotionInter
-    fontSize: 22px
-    fontWeight: 700
-    lineHeight: 1.27
-    letterSpacing: -0.25px
-  title:
-    fontFamily: NotionInter
+  display-xl:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
+    fontSize: 48px
+    fontWeight: 600
+    lineHeight: 48px
+    letterSpacing: -2.4px
+  display-lg:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
+    fontSize: 32px
+    fontWeight: 600
+    lineHeight: 40px
+    letterSpacing: -1.28px
+  display-md:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
+    fontSize: 24px
+    fontWeight: 600
+    lineHeight: 32px
+    letterSpacing: -0.96px
+  display-sm:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
     fontSize: 20px
     fontWeight: 600
-    lineHeight: 1.4
-    letterSpacing: -0.125px
+    lineHeight: 28px
+    letterSpacing: -0.6px
+  body-lg:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 28px
+    letterSpacing: 0px
   body-md:
-    fontFamily: NotionInter
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
     fontSize: 16px
     fontWeight: 400
-    lineHeight: 1.5
-    letterSpacing: 0
-  body-sm:
-    fontFamily: NotionInter
-    fontSize: 15px
-    fontWeight: 400
-    lineHeight: 1.33
-    letterSpacing: 0
-  button:
-    fontFamily: NotionInter
+    lineHeight: 24px
+  body-md-strong:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
     fontSize: 16px
     fontWeight: 500
-    lineHeight: 1.5
-    letterSpacing: 0
-  caption:
-    fontFamily: NotionInter
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
     fontSize: 14px
     fontWeight: 400
-    lineHeight: 1.43
-    letterSpacing: 0
-  eyebrow:
-    fontFamily: NotionInter
+    lineHeight: 20px
+    letterSpacing: -0.28px
+  body-sm-strong:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
+    fontSize: 14px
+    fontWeight: 500
+    lineHeight: 20px
+    letterSpacing: -0.28px
+  caption:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
     fontSize: 12px
-    fontWeight: 600
-    lineHeight: 1.33
-    letterSpacing: 0.125px
+    fontWeight: 400
+    lineHeight: 16px
+  caption-mono:
+    fontFamily: Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, monospace
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16px
+  code:
+    fontFamily: Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, monospace
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 20px
+  button-md:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
+    fontSize: 14px
+    fontWeight: 500
+    lineHeight: 20px
+  button-lg:
+    fontFamily: Geist, Inter, system-ui, -apple-system, sans-serif
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 24px
 
 rounded:
+  none: 0px
   xs: 4px
-  sm: 5px
+  sm: 6px
   md: 8px
   lg: 12px
   xl: 16px
+  pill-sm: 64px
+  pill: 100px
   full: 9999px
 
 spacing:
@@ -108,141 +137,253 @@ spacing:
   sm: 12px
   md: 16px
   lg: 24px
-  xl: 28px
-  xxl: 32px
+  xl: 32px
+  2xl: 40px
+  3xl: 48px
+  4xl: 64px
+  5xl: 96px
+  6xl: 128px
+  section: 192px
 
 components:
   nav-bar:
     backgroundColor: "{colors.canvas}"
     textColor: "{colors.ink}"
     typography: "{typography.body-sm}"
-    padding: 16px
+    height: 64px
+    padding: "{spacing.sm} {spacing.lg}"
+  nav-link:
+    textColor: "{colors.body}"
+    typography: "{typography.body-sm}"
+    rounded: "{rounded.full}"
+    padding: "{spacing.xs} {spacing.sm}"
+  nav-cta-signup:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.body-sm-strong}"
+    rounded: "{rounded.sm}"
+    padding: "0px {spacing.xs}"
+    height: 28px
+  nav-cta-login:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body-sm-strong}"
+    rounded: "{rounded.sm}"
+    padding: "0px {spacing.xs}"
+    height: 28px
+  nav-cta-ask-ai:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.body-sm-strong}"
+    rounded: "{rounded.sm}"
+    padding: "0px {spacing.xs}"
+    height: 28px
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    typography: "{typography.button}"
-    rounded: "{rounded.full}"
-  button-primary-pressed:
-    backgroundColor: "{colors.primary-active}"
-    textColor: "{colors.on-primary}"
+    typography: "{typography.button-lg}"
+    rounded: "{rounded.pill}"
+    padding: "0px {spacing.sm}"
   button-secondary:
-    backgroundColor: "{colors.surface}"
+    backgroundColor: "{colors.canvas}"
     textColor: "{colors.ink}"
-    typography: "{typography.button}"
-    rounded: "{rounded.full}"
-  button-utility:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    typography: "{typography.button}"
-    rounded: "{rounded.md}"
-    padding: 4px 14px
-  button-icon-circular:
-    backgroundColor: "rgba(0, 0, 0, 0.05)"
+    typography: "{typography.button-lg}"
+    rounded: "{rounded.pill}"
+    padding: "0px {spacing.sm}"
+  button-primary-sm:
+    backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
+    typography: "{typography.button-md}"
+    rounded: "{rounded.pill}"
+    padding: "0px {spacing.xs}"
+  button-secondary-sm:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    typography: "{typography.button-md}"
+    rounded: "{rounded.pill}"
+    padding: "0px {spacing.xs}"
+  tab-ghost:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body-sm}"
+    rounded: "{rounded.pill-sm}"
+    padding: "0px {spacing.md}"
+  icon-button-circular:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
     rounded: "{rounded.full}"
-  badge-pill:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.primary}"
-    typography: "{typography.eyebrow}"
-    rounded: "{rounded.full}"
-    padding: 4px 8px
-  feature-card:
-    backgroundColor: "{colors.surface}"
+  card-marketing:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.md}"
+    padding: "{spacing.lg}"
+  card-marketing-large:
+    backgroundColor: "{colors.canvas}"
     textColor: "{colors.ink}"
     typography: "{typography.body-md}"
     rounded: "{rounded.lg}"
-    padding: 24px
-  feature-card-elevated:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.lg}"
-    padding: 24px
-  pricing-plan-card:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body-sm}"
-    rounded: "{rounded.md}"
-    padding: 24px
-  pricing-plan-card-featured:
+    padding: "{spacing.xl}"
+  card-soft:
     backgroundColor: "{colors.canvas-soft}"
     textColor: "{colors.ink}"
+    typography: "{typography.body-md}"
     rounded: "{rounded.md}"
-    padding: 24px
-  text-input:
-    backgroundColor: "{colors.surface}"
+    padding: "{spacing.lg}"
+  template-card:
+    backgroundColor: "{colors.canvas}"
     textColor: "{colors.ink}"
-    typography: "{typography.body-sm}"
-    rounded: "{rounded.xs}"
-    padding: 6px
-  hero-band:
-    backgroundColor: "{colors.secondary}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.md}"
+    padding: "{spacing.md}"
+  code-editor-mockup:
+    backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    typography: "{typography.display-1}"
-    padding: 32px
-  footer:
+    typography: "{typography.code}"
+    rounded: "{rounded.md}"
+    padding: "{spacing.lg}"
+  form-input:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.body-sm}"
+    rounded: "{rounded.sm}"
+    padding: "0px {spacing.sm}"
+    height: 40px
+  form-input-sm:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.body-sm}"
+    rounded: "{rounded.sm}"
+    padding: "0px {spacing.sm}"
+    height: 32px
+  form-input-lg:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.sm}"
+    padding: "0px {spacing.sm}"
+    height: 48px
+  badge-secondary:
     backgroundColor: "{colors.canvas-soft}"
-    textColor: "{colors.ink-secondary}"
+    textColor: "{colors.body}"
     typography: "{typography.caption}"
-    padding: 32px
+    rounded: "{rounded.full}"
+    padding: "0px {spacing.xs}"
+  pricing-card:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.xl}"
+  pricing-card-featured:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.xl}"
+  logo-strip:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.body}"
+    typography: "{typography.body-sm}"
+    padding: "{spacing.lg} {spacing.xl}"
+  hero-band:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    typography: "{typography.display-xl}"
+    padding: "{spacing.4xl} {spacing.lg}"
+  feature-mesh-band:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.ink}"
+    typography: "{typography.display-lg}"
+    padding: "{spacing.5xl} {spacing.lg}"
+  showcase-band-light:
+    backgroundColor: "{colors.canvas-soft}"
+    textColor: "{colors.ink}"
+    typography: "{typography.display-lg}"
+    padding: "{spacing.5xl} {spacing.lg}"
+  showcase-band-dark:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.display-lg}"
+    padding: "{spacing.5xl} {spacing.lg}"
+  footer:
+    backgroundColor: "{colors.canvas}"
+    textColor: "{colors.body}"
+    typography: "{typography.body-sm}"
+    padding: "{spacing.4xl} {spacing.lg}"
+  link-inline:
+    textColor: "{colors.link}"
+    typography: "{typography.body-md}"
+  banner-marketing:
+    backgroundColor: "{colors.canvas-soft}"
+    textColor: "{colors.body}"
+    typography: "{typography.body-sm}"
+    rounded: "{rounded.full}"
+    padding: "{spacing.xs} {spacing.sm}"
 
   # ─── Examples (illustrative) — auto-derived; resolve any TO_FILL markers below ───
   ex-pricing-tier:
-    description: "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface."
+    description: "Default tier card. Mirrors pricing-card chrome on canvas-soft surface with a hairline border."
     backgroundColor: "{colors.canvas-soft}"
     textColor: "{colors.ink}"
     borderColor: "{colors.hairline}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.lg}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.xl}"
   ex-pricing-tier-featured:
-    description: "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode)."
+    description: "Featured tier — polarity-flipped to ink primary with white text and white CTA."
     backgroundColor: "{colors.ink}"
     textColor: "{colors.on-primary}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.lg}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.xl}"
   ex-product-selector:
-    description: "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery)."
-    backgroundColor: "{colors.surface}"
-    rounded: "{rounded.xl}"
+    description: "What's Included summary card — repurposed for the brand's GPU / inference / Pro feature tiers."
+    backgroundColor: "{colors.canvas-soft}"
+    rounded: "{rounded.md}"
     padding: "{spacing.lg}"
   ex-cart-drawer:
-    description: "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart)."
-    backgroundColor: "{colors.surface}"
-    rounded: "{rounded.xl}"
+    description: "Subscription summary — line items per add-on (NOT a literal e-commerce cart)."
+    backgroundColor: "{colors.canvas}"
+    rounded: "{rounded.md}"
     padding: "{spacing.lg}"
     item-divider: "{colors.hairline}"
   ex-app-shell-row:
-    description: "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator."
+    description: "Sidebar nav row. Active state uses brand primary as a left-edge indicator bar."
     backgroundColor: "{colors.canvas}"
     activeIndicator: "{colors.primary}"
     rounded: "{rounded.sm}"
-    padding: "{spacing.sm} {spacing.md}"
+    padding: "{spacing.xs} {spacing.sm}"
   ex-data-table-cell:
-    description: "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm."
+    description: "Mirrors the brand's table chrome. Header uses caption-mono uppercase mono; body uses body-sm."
     headerBackground: "{colors.canvas-soft}"
-    headerTypography: "{typography.eyebrow}"
+    headerTypography: "{typography.caption-mono}"
     bodyTypography: "{typography.body-sm}"
-    cellPadding: "{spacing.sm} {spacing.md}"
+    cellPadding: "{spacing.xs} {spacing.sm}"
     rowBorder: "{colors.hairline}"
   ex-auth-form-card:
-    description: "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside."
-    backgroundColor: "{colors.surface}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.lg}"
-  ex-modal-card:
-    description: "Modal dialog surface — same chrome as feature-card with elevated shadow."
-    backgroundColor: "{colors.surface}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.lg}"
-  ex-empty-state-card:
-    description: "Empty-state illustration frame."
+    description: "Sign-in / sign-up card. Mirrors card-marketing-large chrome with form-input primitives inside."
     backgroundColor: "{colors.canvas-soft}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xxl}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.xl}"
+  ex-modal-card:
+    description: "Modal dialog surface — same chrome as card-marketing-large with Level 5 modal shadow."
+    backgroundColor: "{colors.canvas}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.xl}"
+  ex-empty-state-card:
+    description: "Empty-state illustration frame. Generous padding on canvas-soft."
+    backgroundColor: "{colors.canvas-soft}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.3xl}"
     captionTypography: "{typography.body-md}"
   ex-toast:
-    description: "Toast notification surface — feature-card shape + medium shadow."
-    backgroundColor: "{colors.surface}"
-    rounded: "{rounded.xl}"
+    description: "Toast notification surface — flat-cornered card-marketing chrome with Level 4 shadow."
+    backgroundColor: "{colors.canvas}"
+    rounded: "{rounded.md}"
     padding: "{spacing.sm} {spacing.md}"
     typography: "{typography.body-sm}"
 
@@ -251,124 +392,166 @@ components:
 
 ## Overview
 
-Notion looks like a well-organized desk in good daylight. The dominant surface is not pure white but a warm, paper-soft off-white — `{colors.canvas-soft}` (#f6f5f4) — that takes the clinical edge off the screen and makes long pages feel like a document rather than an app. Type is set in `NotionInter` (a tuned Inter) in near-black `{colors.ink}` at large, tightly-tracked weights, so headlines read as confident statements with very little letter-spacing slack at display sizes (`{typography.display-1}` pulls −2.125px of tracking at 64px). The whole system whispers in greys and blacks, then says exactly one thing in colour: a single, dependable blue, `{colors.primary}` (#0075de), reserved almost entirely for the primary call-to-action and inline links.
+Vercel is a developer-platform brand — the page is a deployment dashboard's marketing surface, written for engineers who already know the syntax. It earns that posture with one of the cleanest stark systems on the web: near-white `{colors.canvas-soft}` body background, ink-near-black `{colors.ink}` text, a 200-step gray scale that gives every divider, border, and disabled state its own deliberate step. The only place the brand introduces colour at marketing scale is the multi-stop mesh gradient (`{colors.gradient-develop-start}` → `{colors.gradient-preview-end}` → `{colors.gradient-ship-start}` → cyan / magenta / amber) that floats in atmospheric backdrops, never miniaturised to a swatch. That gradient is the entire decoration system.
 
-Against that quiet chrome, Notion lets a **playful multi-colour sticker palette** carry all of the brand's personality — purple, pink, orange, teal, green and sky-blue appear as small illustrated blocks, app-icon stickers, and category dots scattered through the marketing pages. These colours never structure the layout or paint a CTA; they decorate. The discipline is deliberate: the interface stays monochrome-plus-blue so the content (and the cheerful illustrations) can breathe. The one exception to the bright daylight is the homepage hero, which inverts into a deep indigo "night" band (`{colors.secondary}`) with white type and glowing sticker constellations — a single dark island in an otherwise light document.
+Type is the second decisive voice. The brand's own custom geometric sans (Geist) carries display, body, button — everything narrative — at weight 600 for display, 500 for buttons, 400 for body. A matching monospaced face (Geist Mono) carries technical labels: terminal mockups, code blocks, sometimes filename captions. Headlines are sentence-case with aggressive negative letter-spacing (`-2.4px` at 48 px hero) — the brand never letter-spaces positively, never goes uppercase outside of mono labels.
 
-Surfaces are defined by hairlines and the faintest layered shadows rather than heavy elevation. Cards round at a friendly 12px (`{rounded.lg}`), the marketing CTAs are fully-pill-shaped (`{rounded.full}`), and utility buttons round at a tighter 8px (`{rounded.md}`). Nothing is loud; the brand's character comes from restraint plus one well-placed splash of joy.
+Surfaces use a four-step ladder: `{colors.canvas}` (pure white for cards), `{colors.canvas-soft}` 98% (the page body), `{colors.canvas-soft-2}` 95% (occasional inset region), `{colors.primary}` (the deep ink-near-black used as the polarity-flipped band when a section needs the dark mode treatment). Shadows are exceptionally subtle — every elevated card carries a stacked shadow built from `0px 1px 1px #00000005` + `0px 2px 2px #0000000a` + an inset border. Cards never float on heavy drop-shadow; they sit on the page held by hairline + soft glow.
 
 **Key Characteristics:**
-- Warm paper-soft canvas `{colors.canvas-soft}` over pure white, never clinical
-- Near-black `{colors.ink}` `NotionInter` type with tight negative tracking at display sizes (`{typography.display-1}`)
-- Exactly one structural accent — Notion blue `{colors.primary}` — reserved for CTAs and links
-- A decorative-only multi-colour sticker palette (`{colors.accent-purple}`, `{colors.accent-pink}`, `{colors.accent-orange}`, `{colors.accent-teal}`, `{colors.accent-green}`, `{colors.accent-sky}`) that adds personality without ever painting structure
-- Pill-shaped marketing CTAs (`{rounded.full}`) contrasted with 8px utility buttons (`{rounded.md}`)
-- Elevation by hairline + barely-there layered shadow, not heavy drop-shadows
-- A single dark indigo hero "night" band (`{colors.secondary}`) inverting the otherwise daylight page rhythm
+- A single black-ink primary CTA `{colors.primary}` carries every conversion target, paired with white-on-white `button-secondary` for the secondary action. The brand uses 100 px pill shape for marketing CTAs and a tight 6 px square shape for in-app nav buttons.
+- A multi-stop mesh gradient (cyan-blue-magenta-amber) is the only decorative chrome — used at hero scale and inside feature-band atmospheric backdrops. It is the brand.
+- Every section eyebrow and small label uses the monospace face `{typography.caption-mono}` or `{typography.code}`; everything else is in the geometric sans.
+- Subtle stacked-shadow elevation — three offsets layered with 4-12 % black opacity — never a single heavy drop-shadow.
+- A complete 100–1000 gray + blue + red + amber + green + teal + purple + pink colour scale exists as a system token set, but the marketing surface uses only the `100`, `1000`, and `700`-level tones; the rest stay in the design-system tokens for in-product surfaces.
+- An "Active CPU" pricing rhythm: `pricing-card` lays out 3-up on the pricing page with `pricing-card-featured` (Pro tier) polarity-flipped to `{colors.primary}` against white-card siblings.
 
 ## Colors
 
-> Source pages analysed: the Notion home page plus Pricing, Enterprise, Product (AI), Product (Agents), and Startups. Every secondary page resolved to the same core palette — Notion runs one tightly-scoped system across the marketing site.
-
 ### Brand & Accent
-- **Notion Blue** (`{colors.primary}` — #0075de): the single structural accent. Primary CTA fill ("Get Notion free"), inline link colour, active-tab and focus signal. This is the only colour that ever paints an action.
-- **Pressed Blue** (`{colors.primary-active}` — #005bab): the darker press state of the primary CTA.
-- **Deep Indigo** (`{colors.secondary}` — #213183): the dark hero "night" band background and its sticker-constellation field; a deep brand-blue used for full-bleed inverted sections.
-
-The remaining colours form Notion's **decorative sticker palette** — they appear only as illustrated blocks, app stickers and category dots, never as CTAs or structural fills:
-- **Sticker Sky** (`{colors.accent-sky}` — #62aef0)
-- **Sticker Purple** (`{colors.accent-purple}` — #d6b6f6) / **Deep Purple** (`{colors.accent-purple-deep}` — #391c57)
-- **Sticker Pink** (`{colors.accent-pink}` — #ff64c8)
-- **Sticker Orange** (`{colors.accent-orange}` — #dd5b00) / **Deep Orange** (`{colors.accent-orange-deep}` — #793400)
-- **Sticker Teal** (`{colors.accent-teal}` — #2a9d99)
-- **Sticker Green** (`{colors.accent-green}` — #1aae39)
-- **Sticker Brown** (`{colors.accent-brown}` — #523410)
+- **Ink** (`{colors.primary}` — `#171717`): The single primary CTA color. Black-near-pure ink that carries every Sign Up pill, every footer CTA, the dark-band polarity-flip. Used as text color throughout the page on light surfaces. (Resolved from `--ds-gray-1000`.)
+- **Cyan** (`{colors.cyan}` — `#50e3c2`): A signature mint-cyan used in the brand gradient and inside Geist-system spotlight tokens. Visible inside the hero gradient stops.
+- **Highlight Pink** (`{colors.highlight-pink}` — `#ff0080`): The brand's highlight magenta, used as the high-saturation stop in the preview-gradient pair.
+- **Violet** (`{colors.violet}` — `#7928ca`): The deep purple used as the start of the preview-gradient and inside developer-console highlights.
+- **Link Blue** (`{colors.link}` — `#0070f3`): The brand's primary link color and the legacy `--geist-success` semantic.
 
 ### Surface
-- **White** (`{colors.canvas}` / `{colors.surface}` — #ffffff): card and panel surfaces, nav bar, form fields.
-- **Warm Paper** (`{colors.canvas-soft}` — #f6f5f4): the signature page canvas and the footer band — a warm off-white that gives the whole site its document-like calm.
-- **Hairline** (`{colors.hairline}` — #e6e6e6): 1px card borders and dividers, a black-at-10%-on-white blend kept solid for token reuse.
+- **Canvas** (`{colors.canvas}` — `#ffffff`): The pure-white card / dialog / modal surface.
+- **Canvas Soft** (`{colors.canvas-soft}` — `#fafafa`): The default page background — 98 % white. Almost every section sits on this tone.
+- **Canvas Soft 2** (`{colors.canvas-soft-2}` — `#f5f5f5`): A slightly deeper inset surface for "code editor inner background", template-card hover states, and dropdown menus.
+- **Hairline** (`{colors.hairline}` — `#ebebeb`): 1 px dividers — table rows, card borders, input borders.
+- **Hairline Strong** (`{colors.hairline-strong}` — `#a1a1a1`): The 500-level gray, used as the slightly-stronger divider on light bands and as the deemphasised text color.
 
 ### Text
-- **Ink** (`{colors.ink}` — #000000): primary headings and body text (rendered at ~95% alpha for a soft true-black).
-- **Warm Charcoal** (`{colors.ink-secondary}` — #31302e): secondary body copy and footer text.
-- **Stone** (`{colors.ink-muted}` — #615d59): supporting / muted copy.
-- **Ash** (`{colors.ink-faint}` — #a39e98): captions, metadata, placeholder text.
+- **Ink** (`{colors.ink}` — `#171717`): Every heading and body paragraph on light surfaces.
+- **Body** (`{colors.body}` — `#4d4d4d`): Secondary text — sub-headings, body captions, nav-link inactive text, footer column body.
+- **Mute** (`{colors.mute}` — `#888888`): Lowest-priority text — placeholder text, fine print, low-key labels.
+- **On Primary** (`{colors.on-primary}` — `#ffffff`): All text on `{colors.primary}` surfaces.
 
 ### Semantic
-Notion's marketing surfaces do not expose a dedicated error/success palette in the system chrome — status is carried by the sticker palette (e.g. `{colors.accent-green}` for affirmative ticks) rather than a separate semantic ramp.
+- **Success / Link** (`{colors.success}` — `#0070f3`): The brand's legacy success indicator doubles as the primary link color. Visible underline-on-hover for inline body links.
+- **Link Deep** (`{colors.link-deep}` — `#0761d1`): The pressed / visited tone for inline links.
+- **Link Bg Soft** (`{colors.link-bg-soft}` — `#d3e5ff`): Soft pastel blue fill for "what's new" pill banners and informational badges.
+- **Error** (`{colors.error}` — `#ee0000`): Validation red for destructive actions and form errors.
+- **Error Soft** (`{colors.error-soft}` — `#f7d4d6`): Soft pastel red for destructive-state backgrounds.
+- **Error Deep** (`{colors.error-deep}` — `#c50000`): Pressed / deep destructive state.
+- **Warning** (`{colors.warning}` — `#f5a623`): Caution / pending status indicator.
+- **Warning Soft** (`{colors.warning-soft}` — `#ffefcf`) / **Warning Deep** (`{colors.warning-deep}` — `#ab570a`): Background + pressed variants.
+
+### Brand Gradient
+The brand's signature decoration is a three-pair gradient stack:
+- **Develop** (`{colors.gradient-develop-start}` `#007cf0` → `{colors.gradient-develop-end}` `#00dfd8`) — the blue-to-teal pair used to mark the "deploy" / "develop" rhythm.
+- **Preview** (`{colors.gradient-preview-start}` `#7928ca` → `{colors.gradient-preview-end}` `#ff0080`) — the violet-to-pink pair used for "preview" surfaces.
+- **Ship** (`{colors.gradient-ship-start}` `#ff4d4d` → `{colors.gradient-ship-end}` `#f9cb28`) — the coral-to-amber pair used for "ship" surfaces.
+
+The three pairs collapse into a single multi-color mesh gradient when used as the hero atmospheric backdrop. Treat the gradient as one unified object — do not crop down to a single colour, do not reorder the stops, and do not miniaturise. Used at hero scale only.
 
 ## Typography
 
 ### Font Family
-The entire system is set in **`NotionInter`** — Notion's tuned cut of Inter — with a fallback stack of `Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial`. A single family carries everything from 64px display headlines to 12px eyebrows; there is no serif, no monospace display face. OpenType `lnum` (lining numerals) and `locl` features are enabled on body and heading roles.
+Two custom faces carry the entire system:
+
+1. **A custom geometric sans** (extracted as `Geist`) for every display, body, button, link, and label. Weights 400 / 500 / 600 are the working set; the face never appears in 700 or heavier. Display sizes are tracked aggressively negative (`-2.4 px` at 48 px hero, `-1.28 px` at 32 px section); body stays at neutral or slightly-negative tracking.
+2. **A custom monospaced face** (extracted as `Geist Mono`) for terminal mockups, code blocks, and small mono-caption labels — anything that wants to signal "technical." Weight 400 only at 12 – 13 px. Tracking neutral.
+
+A condensed display sans (`Space Grotesk`) is loaded as a third face for occasional editorial moments but does not render as the primary face anywhere in the captured surfaces.
 
 ### Hierarchy
 
 | Token | Size | Weight | Line Height | Letter Spacing | Use |
 |---|---|---|---|---|---|
-| `{typography.display-1}` | 64px | 700 | 1.0 | −2.125px | Hero headline ("Meet the night shift") |
-| `{typography.display-2}` | 54px | 700 | 1.04 | −1.875px | Large section headlines |
-| `{typography.heading-1}` | 40px | 700 | 1.1 | −1px | Section headlines ("Plans and features") |
-| `{typography.heading-2}` | 26px | 700 | 1.23 | −0.625px | Sub-section headings |
-| `{typography.heading-3}` | 22px | 700 | 1.27 | −0.25px | Card titles |
-| `{typography.title}` | 20px | 600 | 1.4 | −0.125px | Feature titles, callouts |
-| `{typography.body-md}` | 16px | 400 | 1.5 | 0 | Default body copy |
-| `{typography.body-sm}` | 15px | 400 | 1.33 | 0 | Dense body, table rows, nav |
-| `{typography.button}` | 16px | 500 | 1.5 | 0 | Button labels |
-| `{typography.caption}` | 14px | 400 | 1.43 | 0 | Captions, footnotes |
-| `{typography.eyebrow}` | 12px | 600 | 1.33 | +0.125px | Pill badges, small labels |
+| `{typography.display-xl}` | 48px | 600 | 48px | -2.4px | Hero headline ("Build and deploy on the AI Cloud."). |
+| `{typography.display-lg}` | 32px | 600 | 40px | -1.28px | Section headlines ("Your frontend, delivered.", "A compute model for all workloads."). |
+| `{typography.display-md}` | 24px | 600 | 32px | -0.96px | Card-cluster headlines, pricing-tier names. |
+| `{typography.display-sm}` | 20px | 600 | 28px | -0.6px | Inline display micro-headings. |
+| `{typography.body-lg}` | 18px | 400 | 28px | 0 | Lead paragraphs under section headlines. |
+| `{typography.body-md}` | 16px | 400 | 24px | 0 | Default body paragraph. |
+| `{typography.body-md-strong}` | 16px | 500 | 24px | 0 | Bolded inline body. |
+| `{typography.body-sm}` | 14px | 400 | 20px | -0.28px | Secondary body, nav-link text, button-md labels. |
+| `{typography.body-sm-strong}` | 14px | 500 | 20px | -0.28px | Nav CTA labels, table-row emphasis. |
+| `{typography.caption}` | 12px | 400 | 16px | 0 | Footer secondary lines, badge labels. |
+| `{typography.caption-mono}` | 12px | 400 | 16px | 0 | Section eyebrows and label captions that want a technical voice. |
+| `{typography.code}` | 13px | 400 | 20px | 0 | Inline code, terminal mockups, command snippets. |
+| `{typography.button-md}` | 14px | 500 | 20px | 0 | Small / nav-scale button labels. |
+| `{typography.button-lg}` | 16px | 500 | 24px | 0 | Marketing-scale pill button labels. |
 
 ### Principles
-Notion's type voice is **tight, heavy, and quiet-confident**. Headlines lean on weight 700 and aggressive negative tracking (more negative the larger the size) so display copy feels set, not stretched. Body copy stays at a comfortable 1.5 line-height for document readability. The contrast between a heavy 700 headline and a calm 400 body is the primary expressive lever — there is no decorative typography, only a clear hierarchy.
+- **Negative tracking is part of the voice.** Display sizes use aggressive `-2.4` to `-0.6` px tracking. Reverting to default tracking breaks the brand.
+- **Sentence-case headlines, period-terminated.** Headlines like "Build and deploy on the AI Cloud." end with a deliberate period — that punctuation is part of the brand's voice.
+- **Mono for the technical layer only.** Section eyebrows, code blocks, terminal mockups. Body paragraphs never set in mono.
+- **Weight 600 is the display ceiling.** The geometric sans never appears at 700 / 800. The brand reads as a calmer system because of this.
 
 ### Note on Font Substitutes
-`NotionInter` is a proprietary tuning of the open-source **Inter** family — substitute Inter directly. To approximate Notion's display tightness, apply the negative letter-spacing values in the table above explicitly (Inter at default tracking will read looser than `NotionInter`).
+The two primary faces are proprietary (custom-cut for the brand). Open-source substitutes:
+- **Geometric sans** — *Inter* (400 / 500 / 600) is the closest stylistic match; `font-feature-settings: "ss01", "ss02"` enables the geometric alternates. *Satoshi* is a passable second choice.
+- **Monospace** — *JetBrains Mono* (400) at 12 – 13 px matches the technical voice. *IBM Plex Mono* is the second-best option.
 
 ## Layout
 
 ### Spacing System
-- **Base unit**: 8px.
-- **Tokens (front matter)**: `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 24px · `{spacing.xl}` 28px · `{spacing.xxl}` 32px.
-- Card interior padding lands around `{spacing.lg}` (24px); utility buttons use a tight 4px/14px; form fields pad at `{spacing.xxs}`-scale 6px. Section gaps stack the larger steps.
+- **Base unit**: 4 px. The brand's `--geist-space` token is exactly 4 px and every captured value is a multiple of 4.
+- **Tokens**: `{spacing.xxs}` 4 px · `{spacing.xs}` 8 px · `{spacing.sm}` 12 px · `{spacing.md}` 16 px · `{spacing.lg}` 24 px · `{spacing.xl}` 32 px · `{spacing.2xl}` 40 px · `{spacing.3xl}` 48 px · `{spacing.4xl}` 64 px · `{spacing.5xl}` 96 px · `{spacing.6xl}` 128 px · `{spacing.section}` 192 px.
+- **Section padding**: marketing bands use `{spacing.4xl}` to `{spacing.5xl}` top/bottom. Hero bands stretch to `{spacing.section}` to give the mesh gradient room to breathe.
+- **Card interior padding**: marketing cards sit at `{spacing.lg}` to `{spacing.xl}`; template-grid cards stay tighter at `{spacing.md}` because they sit in a denser grid.
+- **Inline gap**: button rows, nav rows, and chip rows use `{spacing.sm}` to `{spacing.md}` between siblings. The brand's `--geist-gap` is exactly 24 px.
 
 ### Grid & Container
-Content is centred in a wide max-width column (~1080–1300px on desktop per the extracted breakpoints) with generous outer gutters. Feature sections alternate between full-width text blocks and 2-up / 3-up card grids; the pricing page widens to a 4-column plan table. The dark hero spans full-bleed edge to edge while body sections respect the centred container.
+- **Max width**: ~1400 px (`--ds-page-width`); the legacy `--geist-page-width` is 1200 px and still appears on some marketing surfaces. Content centres with horizontal gutters of `{spacing.lg}` 24 px on desktop, `{spacing.md}` 16 px on mobile.
+- **Column patterns**:
+  - Three-feature row: 3-up at desktop, 1-up at mobile (rows like "Web Apps / Composable Commerce / Multi-tenant Platforms").
+  - Tab pill row: 5-up centred row of `tab-ghost` pills.
+  - Template-grid cluster: 5-up at desktop, scaling to 1-up at mobile.
+  - Pricing tier grid: 3-up at desktop with the middle tier polarity-flipped.
+  - Logo strip: ~5 logos wide, single row.
 
 ### Whitespace Philosophy
-Whitespace is the primary grouping device. Sections are separated by large vertical gaps rather than rules, and cards sit on the warm canvas with quiet hairlines instead of heavy frames. The effect is document-like: airy, scannable, and never crowded.
+The mesh gradient does most of the heavy decorative lifting; whitespace separates the bands. Section spacing is generous — `{spacing.4xl}` to `{spacing.5xl}` between bands lets the gradient breathe. Inside a card, the headline/paragraph stack is tight (`{spacing.xs}` 8 px gap), then a wider gap before the CTA cluster. The page reads as engineered — large gaps + tight interior, never the other way around.
 
 ### Responsive Strategy
 
 #### Breakpoints
+
 | Name | Width | Key Changes |
 |---|---|---|
-| Wide | 1440px+ | Full multi-column grids, widest container |
-| Desktop | 1080–1300px | Standard centred container, 3-up card grids |
-| Tablet | 768–840px | Grids collapse to 2-up, nav begins condensing |
-| Mobile | ≤600px | Single-column stacks, hamburger nav, full-width CTAs |
+| Mobile | < 600px | Hero stacks; nav collapses to hamburger; 3-up feature grids drop to 1-up; tab pill row enables horizontal scroll. |
+| Tablet | 600–959px | 3-up grids drop to 2-up; nav still horizontal. |
+| Desktop | 960–1199px | Full 3-up grids; pricing 3-up. |
+| Wide | 1200–1399px | Container caps at 1400 px content width. |
+| Ultra-wide | ≥ 1400px | Content stays centred at 1400 px; bands stretch edge-to-edge in colour but content holds the max-width. |
 
 #### Touch Targets
-Pill CTAs (`button-primary`, `button-secondary`) and utility buttons (`button-utility`) carry comfortable tap padding; aim for a 44×44px minimum hit area on mobile by preserving vertical padding even as labels shrink.
+The `button-primary` pill renders at ~32 px tall in nav and ~48 px tall in marketing contexts. Marketing CTAs comfortably meet WCAG AAA at all breakpoints; nav buttons inflate touch area through `{spacing.xs}` padding on mobile to meet the 44 × 44 px floor.
 
 #### Collapsing Strategy
-The top nav condenses to a hamburger below the tablet breakpoint; multi-column card grids collapse to a single stacked column; the pricing plan table reflows from 4 side-by-side columns into stacked plan cards. Section padding tightens but the warm-canvas rhythm is preserved.
+- **Nav**: full link row + Ask AI / Log In / Sign Up pills at desktop. Collapses to logo + hamburger at mobile with the menu opening as a full-overlay.
+- **Hero**: mesh gradient stays centred; headline + body stack vertically at all breakpoints (the brand doesn't use a split-hero pattern).
+- **Three-feature row**: 3-up → 2-up → 1-up at the breakpoints above; cards keep their `{rounded.md}` 8 px shape across all viewports.
+- **Pricing card grid**: 3-up at desktop, vertical stack at mobile with `pricing-card-featured` always sitting in the middle.
+- **Template grid**: 5-up → 3-up → 2-up → 1-up. Each `template-card` keeps its 16:9 aspect on the image.
 
 #### Image Behavior
-Product screenshots and illustration tiles sit inside rounded `{rounded.lg}` frames and scale fluidly within their grid cell. Sticker illustrations are small fixed-scale decorative assets that re-flow but do not crop.
+- **Mesh gradient**: rendered as inline SVG or canvas-painted gradient; scales fluidly with the hero container; never crops, never tiles.
+- **Customer logos**: rendered as monochrome SVGs in the logo strip; consistent 24 px height.
+- **Code editor mockup**: dark `{colors.primary}` rectangle with mono text rendered inside; treated as an image at the layout level.
+- **Template thumbnails**: 16:9 landscape inside `{rounded.md}` card chrome; lazy-loaded; consistent grayscale palette in the placeholder state.
 
 ## Elevation & Depth
 
 | Level | Treatment | Use |
 |---|---|---|
-| 0 — Flat | Hairline border `{colors.hairline}`, no shadow | Default cards on the warm canvas |
-| 1 — Soft | Layered micro-shadow: `rgba(0,0,0,0.01) 0 0.175px 1.041px`, `0.02 0 0.8px 2.925px`, `0.027 0 2.025px 7.847px`, `0.04 0 4px 18px` | Raised feature cards, floating buttons |
-| 2 — Elevated | Deeper 5-stop stack ending in `rgba(0,0,0,0.05) 0 23px 52px` | Modals, popovers, the elevated white pill on the dark hero |
+| Level 0 — Flat | No shadow, no border. | Full-bleed hero bands and the polarity-flipped dark sections. |
+| Level 1 — Inset Hairline | `0 0 0 1px #00000014` inset 1 px border. | Default card chrome — the brand's universal "you can see this card" cue. |
+| Level 2 — Subtle Drop | `0px 1px 1px #00000005, 0px 2px 2px #0000000a` plus inset hairline. | Slightly elevated cards (template-grid, marketing-card). |
+| Level 3 — Soft Stack | `0px 2px 2px #0000000a, 0px 8px 8px -8px #0000000a` plus inset hairline. | The "medium" elevation — feature-grid cards. |
+| Level 4 — Float Stack | `0px 2px 2px #0000000a, 0px 8px 16px -4px #0000000a` plus inset hairline. | "Large" elevation — pricing cards, callout panels. |
+| Level 5 — Modal | `0px 1px 1px #00000005, 0px 8px 16px -4px #0000000a, 0px 24px 32px -8px #0000000f` plus inset hairline. | Modal / dialog surfaces and dropdown menus. |
 
-Notion's elevation philosophy is **barely-there**: shadows are built from many near-transparent layers so surfaces feel gently lifted off the paper rather than dramatically dropped. Most cards rely on a hairline alone.
+The brand uses STACKED shadows — multiple small offsets layered to fake natural light — never a single 8-px-blur generic drop. Inset hairline rings are always added so the card edge stays crisp.
 
 ### Decorative Depth
-The brand's real depth cue is **illustration**, not shadow. The dark indigo hero (`{colors.secondary}`) uses glowing sticker stickers and a starfield to create a sense of a lit night scene, and feature sections layer small colourful app-icon stickers over plain surfaces to add playful dimensionality. Colour-blocked illustration tiles (purple, pink, orange, teal headers on otherwise-white cards) provide visual rhythm.
+- **Mesh gradient as atmospheric depth**: the hero's multi-stop gradient is the brand's only "atmospheric" effect — applied as a flat 2-D backdrop rather than a 3-D illustration.
+- **Polarity-flipped dark band as section-depth**: switching the surface from `{colors.canvas-soft}` to `{colors.primary}` (the deep ink) is the brand's chief depth cue between bands.
+- **Inset-shadow + drop-shadow combo**: the cards' combination of an inset 1 px ring and a multi-stop drop produces a "card sits on the page" effect without ever feeling material-heavy.
 
 ## Shapes
 
@@ -376,76 +559,130 @@ The brand's real depth cue is **illustration**, not shadow. The dark indigo hero
 
 | Token | Value | Use |
 |---|---|---|
-| `{rounded.xs}` | 4px | Form fields, small tags, inline chips |
-| `{rounded.sm}` | 5px | Menu items, list rows, status pills |
-| `{rounded.md}` | 8px | Utility / nav buttons, smaller cards |
-| `{rounded.lg}` | 12px | Feature cards, illustration frames, content tiles |
-| `{rounded.xl}` | 16px | Large containers, image wells |
-| `{rounded.full}` | 9999px | Marketing pill CTAs, badges, circular icon buttons |
+| `{rounded.none}` | 0px | Full-bleed hero / footer bands. |
+| `{rounded.xs}` | 4px | Tightest inline pill — the `nav-cta-signup` 6-px-radius button (mapped to `xs/sm`). |
+| `{rounded.sm}` | 6px | The brand's `--geist-radius` token — base UI radius for in-app buttons, form inputs, dropdown menus. |
+| `{rounded.md}` | 8px | The brand's `--geist-marketing-radius` token — feature cards, template cards. |
+| `{rounded.lg}` | 12px | Slightly larger card chrome (pricing-card variants). |
+| `{rounded.xl}` | 16px | Largest card chrome — when a card hosts a hero image cap. |
+| `{rounded.pill-sm}` | 64px | Tab-ghost pills inside the "AI Apps / Web Apps / Ecommerce / Marketing / Platforms" row. |
+| `{rounded.pill}` | 100px | The marketing CTA pill — `button-primary`, `button-secondary`, "Start Deploying" pill. |
+| `{rounded.full}` | 9999px | Icon-button circular containers, nav-link ghost pills. |
 
 ### Photography Geometry
-Product screenshots are framed in rounded `{rounded.lg}` / `{rounded.xl}` wells, typically full-bleed within their container with a hairline edge. Illustration tiles use colour-blocked header bands above white card bodies. Avatars and app-icon stickers are small, sometimes fully circular (`{rounded.full}`). There is no heavy art-direction crop — images scale within their rounded frame.
+- **Mesh gradient**: full-bleed 2-D atmospheric backdrop, never cropped to a frame; treated as the page's wallpaper.
+- **Customer logos**: monochrome SVG, consistent 24 px height in a flex row.
+- **Code editor mockup**: 16:10 dark rectangle, `{rounded.md}` corners.
+- **Template thumbnails**: 16:9 landscape inside `{rounded.md}` chrome.
+- **Showcase imagery**: 2:1 or 16:9 inside `{rounded.lg}` to `{rounded.xl}` chrome with a stacked shadow.
 
 ## Components
 
-> **No hover states documented.** Every spec below documents Default and Active/Pressed states only. Variants live as separate `components:` front-matter entries and are described in their own sub-blocks.
-
-### Navigation
-
-**`nav-bar`** — Top navigation
-- White surface `{colors.canvas}`, `{colors.ink}` link text at `{typography.body-sm}`, padding `{spacing.md}`. Sits as a slim sticky bar; left wordmark, centre product/solutions menu links, right "Log in" text link plus a `button-utility` "Get Notion free" CTA. Condenses to a hamburger below the tablet breakpoint.
-
 ### Buttons
 
-**`button-primary`** — Primary CTA ("Get Notion free")
-- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}`, fully pill-shaped `{rounded.full}`. The single blue action on any page.
-- Pressed state lives in `button-primary-pressed` (background `{colors.primary-active}`); marketing buttons also apply a brief `scale(0.9)` press transform.
+**`button-primary`** — the canonical 100-px-radius black pill, marketing scale.
+- Background `{colors.primary}`, text `{colors.on-primary}`, label set in `{typography.button-lg}`, padding `0px {spacing.sm}` 12 px, shape `{rounded.pill}` 100 px. Renders ~48 px tall when paired with the marketing flex layout.
 
-**`button-primary-pressed`**
-- Background `{colors.primary-active}`, text `{colors.on-primary}` — the depressed state of the primary CTA.
+**`button-secondary`** — the white pill paired with the black primary inside marketing bands.
+- Background `{colors.canvas}`, text `{colors.ink}`, same typography + padding as `button-primary`, shape `{rounded.pill}`.
 
-**`button-secondary`** — Secondary CTA ("Request a demo")
-- White surface `{colors.surface}`, text `{colors.ink}`, type `{typography.button}`, pill `{rounded.full}`, carried by the soft Level-1 shadow. Pairs beside `button-primary` in the hero.
+**`button-primary-sm`** — the smaller-scale primary pill used inside nav and pricing-card CTAs.
+- Background `{colors.primary}`, text `{colors.on-primary}`, label set in `{typography.button-md}` (14 px / 500), shape `{rounded.pill}`.
 
-**`button-utility`** — Nav / plan-select button
-- White surface `{colors.surface}`, text `{colors.ink}`, type `{typography.button}`, tighter `{rounded.md}` (8px), padding `4px 14px`, 1px `{colors.hairline}` border. Used for the nav CTA and pricing plan-select buttons where the marketing pill would be too large.
+**`button-secondary-sm`** — the smaller-scale white pill paired with `button-primary-sm`.
+- Background `{colors.canvas}`, text `{colors.ink}`, same typography + shape as `button-primary-sm`.
 
-**`button-icon-circular`** — Carousel / media control
-- Circular `{rounded.full}` control with a translucent `rgba(0,0,0,0.05)` fill and `{colors.on-primary}` glyph, used for slide and play/pause controls; applies a `scale(0.9)` press transform.
+**`tab-ghost`** — the centred-row tab pill ("AI Apps / Web Apps / Ecommerce / Marketing / Platforms").
+- Background `{colors.canvas}`, text `{colors.ink}`, label set in `{typography.body-sm}`, padding `0px {spacing.md}`, shape `{rounded.pill-sm}` 64 px.
+
+**`icon-button-circular`** — the circular icon container (often a "?" or arrow inside).
+- Background `{colors.canvas}`, dark icon, 1 px solid hairline border, shape `{rounded.full}`.
+
+**Nav CTAs:**
+
+**`nav-cta-signup`** — the small black "Sign Up" button in the nav row.
+- Background `{colors.primary}`, text `{colors.on-primary}`, label `{typography.body-sm-strong}`, padding `0px {spacing.xs}`, height 28 px, shape `{rounded.sm}` 6 px (the brand's `--geist-radius`).
+
+**`nav-cta-login`** — the white "Log In" button in the nav.
+- Background `{colors.canvas}`, text `{colors.ink}`, same typography / height / shape as `nav-cta-signup`.
+
+**`nav-cta-ask-ai`** — the small "Ask AI" button with a faint border.
+- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.hairline}` border (extracted as `0px solid rgb(235, 235, 235)`), same typography / height / shape.
 
 ### Cards & Containers
 
-**`feature-card`** — Content / feature card
-- White surface `{colors.surface}`, `{colors.ink}` text, `{typography.body-md}`, rounded `{rounded.lg}` (12px), padding `{spacing.lg}` (24px). The workhorse marketing card; often topped by a colour-blocked illustration band from the sticker palette. Default elevation is flat (hairline only).
+**`card-marketing`** — the canonical marketing feature card (3-up section cards).
+- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.lg}` 24 px, shape `{rounded.md}` 8 px (the `--geist-marketing-radius`). Carries Level 3 soft-stack shadow.
 
-**`feature-card-elevated`** — Raised feature card
-- Same chrome as `feature-card` with the soft Level-1 layered shadow for cards that float above the canvas (testimonials, floating product panels).
+**`card-marketing-large`** — the larger marketing card used for "compute model" / "AI Gateway" callouts.
+- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.xl}`, shape `{rounded.lg}` 12 px. Carries Level 4 float-stack shadow.
 
-**`pricing-plan-card`** — Pricing plan column
-- White surface `{colors.surface}`, `{colors.ink}` text, `{typography.body-sm}`, rounded `{rounded.md}` (8px), padding `{spacing.lg}`. A bordered column listing a plan's price and feature checklist, with a `button-utility` select action.
+**`card-soft`** — the soft-tinted card used inside cluster groups (lighter than canvas-soft).
+- Background `{colors.canvas-soft}`, text `{colors.ink}`, padding `{spacing.lg}`, shape `{rounded.md}`.
 
-**`pricing-plan-card-featured`** — Highlighted plan column
-- Warm `{colors.canvas-soft}` fill to lift the recommended tier off the white siblings, same `{rounded.md}` shape and padding. Distinguished by surface tint rather than a coloured border.
+**`template-card`** — the deploy-template card in the "Deploy your first app" grid.
+- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md}` 16 px, shape `{rounded.md}` 8 px. Hosts a 16:9 thumbnail at the top.
+
+**`code-editor-mockup`** — the dark code-preview surface inside marketing bands.
+- Background `{colors.primary}`, text `{colors.on-primary}`, body in `{typography.code}` (13 px / Geist Mono), padding `{spacing.lg}` 24 px, shape `{rounded.md}` 8 px.
+
+**`pricing-card`** — the default pricing-tier card.
+- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.xl}` 32 px, shape `{rounded.lg}` 12 px. Inside: tier name in `{typography.display-md}`, price in `{typography.display-xl}`, feature list in `{typography.body-md}` rows, CTA at the bottom.
+
+**`pricing-card-featured`** — the polarity-flipped "Pro" tier card.
+- Background `{colors.primary}`, text `{colors.on-primary}`, same shape + padding as `pricing-card`. CTA inverts to `button-secondary-sm` (white pill on black card).
 
 ### Inputs & Forms
 
-**`text-input`** — Text / number field
-- White surface `{colors.surface}`, `{colors.ink}` text, `{typography.body-sm}`, 1px `rgb(221,221,221)` border, rounded `{rounded.xs}` (4px), padding `6px`. Square-ish corners deliberately tighter than the pill CTAs. Focus adds the soft Level-1 shadow.
+**`form-input`** — the canonical text input.
+- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.hairline}` border, body in `{typography.body-sm}` (14 px), padding `0px {spacing.sm}`, height 40 px (the brand's `--geist-form-height`), shape `{rounded.sm}` 6 px.
+
+**`form-input-sm`** — small-height variant (32 px tall) for tight forms.
+- Same as `form-input` but height 32 px (the `--geist-form-small-height`).
+
+**`form-input-lg`** — large-height variant (48 px tall) for hero CTAs.
+- Same as `form-input` but height 48 px (the `--geist-form-large-height`); body in `{typography.body-md}` 16 px.
+
+### Navigation
+
+**`nav-bar`** — the sticky top nav.
+- Background `{colors.canvas}`, text `{colors.ink}`, height 64 px (the brand's `--header-height`), padding `{spacing.sm} {spacing.lg}`. Layout: logo left, link row centre, "Ask AI / Log In / Sign Up" cluster right.
+
+**`nav-link`** — the centred link row inside `nav-bar`.
+- Text `{colors.body}`, set in `{typography.body-sm}`, padding `{spacing.xs} {spacing.sm}`, shape `{rounded.full}` (ghost pill — visible only on hover or active, but the radius is documented).
+
+**`footer`** — the bottom 4-column nav.
+- Background `{colors.canvas}`, text `{colors.body}`, padding `{spacing.4xl} {spacing.lg}`. Eyebrow column labels in `{typography.caption-mono}` (uppercase mono effect); link rows in `{typography.body-sm}`.
 
 ### Signature Components
 
-**`hero-band`** — Dark "night" hero
-- Full-bleed deep indigo `{colors.secondary}` band carrying `{typography.display-1}` white headline, sticker-constellation field, and a `button-primary` + `button-secondary` CTA pair. The single inverted dark island in an otherwise daylight page.
+**`hero-band`** — the white hero with the mesh gradient backdrop.
+- Background `{colors.canvas}` (or `{colors.canvas-soft}` on some surfaces), text `{colors.ink}`, padding `{spacing.4xl} {spacing.lg}`. Inside: a small mono badge above the headline, the headline in `{typography.display-xl}` (sentence-case, period-terminated), a body lead in `{typography.body-lg}`, then a CTA row with `button-primary` + `button-secondary`. The mesh gradient sits behind, scaled to occupy roughly the top half of the band.
 
-**`badge-pill`** — Eyebrow / category pill
-- White surface `{colors.surface}`, `{colors.primary}` text, `{typography.eyebrow}` (12px / 600), fully pill `{rounded.full}`, padding `4px 8px`. Small labels such as the pricing "Essential for staying organized" eyebrow and category tags.
+**`feature-mesh-band`** — the secondary section that hosts a mesh-gradient atmospheric backdrop with feature copy on top.
+- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.5xl} {spacing.lg}`. Section headline in `{typography.display-lg}`; supporting body in `{typography.body-md}`.
 
-**`footer`** — Site footer
-- Warm `{colors.canvas-soft}` band, `{colors.ink-secondary}` link text at `{typography.caption}`, padding `{spacing.xxl}`. Multi-column link directory closing every page.
+**`showcase-band-light`** — a soft-canvas section ("Deploy your first app in seconds").
+- Background `{colors.canvas-soft}`, text `{colors.ink}`, padding `{spacing.5xl} {spacing.lg}`.
+
+**`showcase-band-dark`** — the polarity-flipped dark band ("A compute model for all workloads").
+- Background `{colors.primary}`, text `{colors.on-primary}`, padding `{spacing.5xl} {spacing.lg}`. Section headline in `{typography.display-lg}` (white on black). Often contains a `code-editor-mockup` flush with the band.
+
+**`logo-strip`** — the customer-logo wrapping row near the top of the page.
+- Background `{colors.canvas}`, text `{colors.body}`, padding `{spacing.lg} {spacing.xl}`. Logos rendered as monochrome SVGs at consistent height.
+
+**`badge-secondary`** — the small inline metadata pill ("New", "Beta", "Live").
+- Background `{colors.canvas-soft}`, text `{colors.body}`, body in `{typography.caption}`, padding `0px {spacing.xs}`, shape `{rounded.full}`.
+
+**`banner-marketing`** — the "Introducing X" announcement pill at the top of pages.
+- Background `{colors.canvas-soft}`, text `{colors.body}`, body in `{typography.body-sm}`, padding `{spacing.xs} {spacing.sm}`, shape `{rounded.full}`.
+
+**`link-inline`** — body-copy inline links.
+- Text `{colors.link}` (`#0070f3`), body in `{typography.body-md}`, underlined.
 
 ### Examples (illustrative)
 
-> Kit-mirror demonstration surfaces. Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently.
+> Auto-derived kit-mirror demonstration surfaces (`scripts/derive-examples-block.mjs`). Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently. `TO_FILL` markers indicate missing primitives — resolve in the LLM judgment pass.
 
 **`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.
 - Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`
@@ -481,18 +718,19 @@ Product screenshots are framed in rounded `{rounded.lg}` / `{rounded.xl}` wells,
 ## Do's and Don'ts
 
 ### Do
-- Reserve `{colors.primary}` for the primary action, inline links, and the active/focus signal — nothing decorative.
-- Keep the page on the warm `{colors.canvas-soft}` canvas; use pure white `{colors.surface}` for cards and fields to create gentle figure/ground.
-- Let the sticker palette (`{colors.accent-pink}`, `{colors.accent-teal}`, `{colors.accent-orange}`, …) live only in illustrations, icon tiles and category dots.
-- Set headlines in heavy `{typography.display-1}`/`{typography.heading-1}` with their negative tracking applied explicitly.
-- Use pill `{rounded.full}` for marketing CTAs and tighter `{rounded.md}` for nav/utility buttons — the contrast is intentional.
-- Define surfaces with `{colors.hairline}` and the barely-there Level-1 shadow rather than heavy drop-shadows.
-- Reserve the deep indigo `{colors.secondary}` "night" treatment for a single hero moment, not repeated bands.
+- Reserve `{colors.primary}` (`#171717`) for primary CTAs across the page. Black ink IS the conversion target.
+- Use `{rounded.pill}` 100 px for every marketing-scale CTA and `{rounded.sm}` 6 px for nav-scale buttons. The two pill scales coexist deliberately.
+- Set every headline in `{typography.display-*}` weight 600, sentence-case, often period-terminated. Aggressive negative tracking is part of the voice.
+- Use the brand mesh gradient as atmospheric decoration at hero scale only — never miniaturise it to an icon, never reduce to a single colour.
+- Layer stacked shadows (multiple small offsets with inset hairline) rather than single heavy drops. The brand's elevation is calmer than Material.
+- Cycle page surfaces in `{colors.canvas-soft}` → `{colors.canvas}` → `{colors.primary}` polarity-flipped bands; the dark band IS the depth cue.
+- Set every code block and technical eyebrow in `{typography.code}` / `{typography.caption-mono}`. Mono is the voice of the platform.
 
 ### Don't
-- Don't paint a CTA or structural fill in any sticker-palette colour — those are decoration only.
-- Don't introduce a second structural accent alongside `{colors.primary}`.
-- Don't put pill `{rounded.full}` radii on form fields — inputs stay tight at `{rounded.xs}` (4px).
-- Don't drop heavy shadows; Notion's elevation is many near-transparent layers, never a hard cast.
-- Don't set body copy in a heavy weight — keep 400 for readability and let weight 700 belong to headlines.
-- Don't place type on pure clinical white for full pages; the warm `{colors.canvas-soft}` is core to the brand calm.
+- Don't introduce a sixth accent colour. The brand operates with ink + gray + the four-pair gradient palette; new accents flatten the voice.
+- Don't render headlines in all-caps. Sentence-case + negative tracking is non-negotiable.
+- Don't drop a single heavy drop-shadow on cards. The brand's elevation is built from stacked small offsets + inset hairline rings.
+- Don't render the brand gradient at icon scale or in a single-colour reduced form. The gradient lives at hero scale only.
+- Don't promote the geometric sans to weight 700. The brand's display ceiling is 600.
+- Don't pair the marketing 100-px pill CTA shape with the 6-px nav radius on the same screen — pick a scale and stay there.
+- Don't set body paragraphs in the mono face. The mono is for code + technical labels only.
