@@ -37,7 +37,7 @@ function NewsEvents() {
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+                                className="w-full h-full object-cover scale-110 transition-transform duration-500 group-hover:scale-115"
                             />
                         </div>
                         {/* Content */}
