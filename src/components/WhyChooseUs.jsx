@@ -11,23 +11,23 @@ const WhyChooseUs = () => {
         {
             title: "Revolutionizing M&A",
             image: revolutionizingImg,
-            description: "Transforming the way deals are done globally."
+            description: "Transforming the way deals are done globally with automated workflows."
         },
         {
             title: "Information Security",
             image: securityImg,
-            description: "Enterprise-grade security for your most sensitive data."
+            description: "Enterprise-grade security, access logs, and compliance for your most sensitive data."
         },
         {
             title: "Digital M&A Strategies",
             image: strategiesImg,
-            description: "Data-driven insights to guide your strategy."
+            description: "Data-driven insights and playbooks to structure and guide your strategy."
         }
     ];
 
     return (
-        <section className="py-20 bg-midnight-navy">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="about" className="py-24 bg-canvas-soft">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -35,33 +35,34 @@ const WhyChooseUs = () => {
                     transition={{ duration: 0.6 }}
                     className="mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Why Enterprises Choose MergerWare</h2>
+                    <span className="font-mono text-xs text-mute tracking-widest uppercase mb-2 block">Security & Performance</span>
+                    <h2 className="text-display-lg text-ink mb-4">Why enterprises choose MergerWare.</h2>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {innovations.map((item, index) => (
                         <motion.div
                             key={index}
-                            className="bg-glass-slate backdrop-blur-glass border border-white/10 rounded-2xl overflow-hidden hover:border-electric-cyan/50 transition-colors duration-300"
+                            className="bg-canvas border border-hairline rounded-md overflow-hidden shadow-level-2 hover:shadow-level-3 hover:border-hairline-strong transition-all duration-300 flex flex-col"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.2 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-                            <div className="h-48 pt-8 flex items-center justify-center bg-white/5 relative overflow-hidden group">
+                            <div className="h-48 pt-8 flex items-center justify-center bg-canvas-soft-2/40 relative overflow-hidden group">
                                 <motion.img
                                     src={item.image}
                                     alt={item.title}
                                     className="h-32 w-auto object-contain z-10 relative"
-                                    whileHover={{ scale: 1.1 }}
+                                    whileHover={{ scale: 1.05 }}
                                     transition={{ duration: 0.3 }}
                                 />
-                                {/* Glow behind image */}
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-electric-cyan/20 blur-[40px] rounded-full" />
+                                {/* Soft Light Glow behind image */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-link/5 blur-[30px] rounded-full" />
                             </div>
-                            <div className="p-8 text-center">
-                                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                                {/* Assuming user might want description or just title, adding implied description logic or empty if not in design explicitly, but spacing looks good with simple title */}
+                            <div className="p-8 text-center flex-grow flex flex-col justify-start">
+                                <h3 className="text-display-sm text-ink mb-3">{item.title}</h3>
+                                <p className="text-sm text-body leading-relaxed font-light">{item.description}</p>
                             </div>
                         </motion.div>
                     ))}

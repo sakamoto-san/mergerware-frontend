@@ -3,73 +3,80 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
     return (
-        <section id="demo" className="py-20 bg-midnight-navy">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <section id="demo" className="py-24 bg-canvas-soft border-t border-hairline">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
 
                     {/* Left Side Text */}
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                            Ready to Transform Your Deal Lifecycle?
+                        <span className="font-mono text-xs text-mute tracking-widest uppercase mb-2 block font-medium">Request Demo</span>
+                        <h2 className="text-display-lg md:text-[40px] text-ink mb-6 leading-tight">
+                            Ready to transform your deal lifecycle?
                         </h2>
-                        <p className="text-slate-400 text-lg md:text-xl max-w-md">
-                            Contact our team to request a personalized demo of the platform.
+                        <p className="text-body-lg text-body max-w-md leading-relaxed font-light">
+                            Contact our team to request a personalized demonstration and see how MergerWare fits into your organization's workflow.
                         </p>
                     </motion.div>
 
-                    {/* Right Side Form */}
+                    {/* Right Side Form (Sleek Auth-Form Card style) */}
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
+                        initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className="bg-transparent"
+                        transition={{ duration: 0.6 }}
+                        className="bg-canvas border border-hairline rounded-lg p-8 sm:p-10 shadow-level-4"
                     >
-                        <form className="space-y-4">
+                        <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                             <div>
                                 <input
                                     type="text"
                                     placeholder="Full Name"
-                                    className="w-full bg-white/10 border border-white/10 text-white px-4 py-3 rounded-md focus:outline-none focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan placeholder-gray-500 transition-colors"
+                                    className="w-full bg-canvas border border-hairline text-ink px-4 py-2 rounded-sm text-sm font-light focus:outline-none focus:border-link focus:ring-1 focus:ring-link placeholder-mute transition-colors h-10"
                                 />
                             </div>
                             <div>
                                 <input
                                     type="text"
                                     placeholder="Company"
-                                    className="w-full bg-white/10 border border-white/10 text-white px-4 py-3 rounded-md focus:outline-none focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan placeholder-gray-500 transition-colors"
+                                    className="w-full bg-canvas border border-hairline text-ink px-4 py-2 rounded-sm text-sm font-light focus:outline-none focus:border-link focus:ring-1 focus:ring-link placeholder-mute transition-colors h-10"
                                 />
                             </div>
                             <div>
                                 <input
                                     type="email"
                                     placeholder="Work Email"
-                                    className="w-full bg-white/10 border border-white/10 text-white px-4 py-3 rounded-md focus:outline-none focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan placeholder-gray-500 transition-colors"
+                                    className="w-full bg-canvas border border-hairline text-ink px-4 py-2 rounded-sm text-sm font-light focus:outline-none focus:border-link focus:ring-1 focus:ring-link placeholder-mute transition-colors h-10"
                                 />
                             </div>
                             <div>
-                                <select
-                                    className="w-full bg-white/10 border border-white/10 text-gray-400 px-4 py-3 rounded-md focus:outline-none focus:border-electric-cyan focus:ring-1 focus:ring-electric-cyan transition-colors appearance-none"
-                                >
-                                    <option value="" disabled selected>Country</option>
-                                    <option value="us">United States</option>
-                                    <option value="uk">United Kingdom</option>
-                                    <option value="in">India</option>
-                                    <option value="sg">Singapore</option>
-                                    {/* Add more countries as needed */}
-                                </select>
+                                <div className="relative">
+                                    <select
+                                        className="w-full bg-canvas border border-hairline text-body px-4 py-2 rounded-sm text-sm font-light focus:outline-none focus:border-link focus:ring-1 focus:ring-link transition-colors h-10 appearance-none cursor-pointer"
+                                    >
+                                        <option value="" disabled selected>Country</option>
+                                        <option value="us">United States</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="in">India</option>
+                                        <option value="sg">Singapore</option>
+                                    </select>
+                                    <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-body">
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
 
                             <button
                                 type="submit"
-                                className="w-full bg-[#00D2FF] text-[#050A14] font-bold py-3 rounded-md hover:bg-[#33efff] transition-colors mt-2 shadow-[0_0_15px_rgba(0,210,255,0.3)] hover:shadow-[0_0_25px_rgba(0,210,255,0.5)] cursor-pointer"
+                                className="w-full bg-primary text-on-primary font-medium rounded-sm hover:bg-black/90 transition-colors mt-6 shadow-level-2 cursor-pointer h-10 text-sm"
                             >
-                                Submit
+                                Submit Request
                             </button>
                         </form>
                     </motion.div>

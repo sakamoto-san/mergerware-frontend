@@ -10,35 +10,34 @@ const stats = [
 
 const Stats = () => {
     return (
-        <section className="py-20 relative overflow-hidden">
-            {/* Background Gradients */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-electric-cyan/5 rounded-full blur-[100px] -z-10" />
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-royal-blue/5 rounded-full blur-[100px] -z-10" />
+        <section className="py-24 bg-primary text-on-primary relative overflow-hidden border-y border-hairline-strong/20">
+            {/* Subtle mesh atmospheric backdrop inside the dark band */}
+            <div className="absolute inset-0 top-0 left-0 w-full h-full -z-10 opacity-30 bg-gradient-to-br from-violet/20 via-transparent to-cyan/10" />
 
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16">
                     {stats.map((stat, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
+                            transition={{ duration: 0.6, delay: index * 0.08 }}
                             className="text-center group"
                         >
-                            <div className="mb-2 flex justify-center items-baseline">
+                            <div className="mb-3 flex justify-center items-baseline">
                                 <motion.span
-                                    className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 group-hover:from-electric-cyan group-hover:to-royal-blue transition-all duration-300"
+                                    className="text-5xl md:text-6xl font-semibold text-on-primary tracking-tighter"
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
-                                    transition={{ duration: 1, delay: 0.2 + (index * 0.1) }}
+                                    transition={{ duration: 0.8, delay: 0.2 + (index * 0.08) }}
                                 >
                                     {stat.value}
                                 </motion.span>
-                                <span className="text-2xl md:text-4xl font-bold text-electric-cyan ml-1">{stat.suffix}</span>
+                                <span className="text-2xl md:text-3xl font-mono text-cyan ml-0.5">{stat.suffix}</span>
                             </div>
-                            <h4 className="text-lg font-semibold text-white mb-2">{stat.label}</h4>
-                            <p className="text-sm text-gray-400 max-w-[150px] mx-auto leading-relaxed">
+                            <h4 className="text-xs font-mono uppercase tracking-wider text-mute mb-2">{stat.label}</h4>
+                            <p className="text-xs text-mute max-w-[160px] mx-auto leading-relaxed font-light">
                                 {stat.description}
                             </p>
                         </motion.div>

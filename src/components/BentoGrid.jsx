@@ -45,20 +45,17 @@ const BentoGrid = () => {
     ];
 
     return (
-        <section id="solutions" className="py-24 bg-[#050A14] relative z-10 overflow-hidden">
-            {/* Ambient Background Glow for depth */}
-            <div className="absolute top-[20%] left-[10%] w-[400px] h-[400px] bg-[#00D2FF]/5 rounded-full blur-[100px] -z-10" />
-
+        <section id="solutions" className="py-24 bg-canvas-soft relative z-10 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                     className="mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Solutions</h2>
-                    <div className="w-20 h-1 bg-[#00D2FF] rounded-full" />
+                    <span className="font-mono text-xs text-mute tracking-widest uppercase mb-2 block">Enterprise Capabilities</span>
+                    <h2 className="text-display-lg text-ink mb-4 tracking-tight">Solutions.</h2>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -66,24 +63,24 @@ const BentoGrid = () => {
                         <motion.div
                             key={index}
                             className={`${item.colSpan}`}
-                            initial={{ opacity: 0, y: 30 }}
+                            initial={{ opacity: 0, y: 25 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            transition={{ duration: 0.5, delay: index * 0.08 }}
                         >
-                            <GlowingCard className="group hover:shadow-[0_0_30px_rgba(0,210,255,0.15)] overflow-visible h-full">
-                                <div className="flex flex-col items-center justify-center h-full w-full p-6 text-center gap-6 relative z-10">
-                                    {/* Dynamic Background Gradient */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl -z-10" />
+                            <GlowingCard className="group overflow-visible h-full">
+                                <div className="flex flex-col items-center justify-between h-full w-full p-8 text-center gap-8 relative z-10 min-h-[300px]">
+                                    {/* Clean Gradient Overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-br from-canvas-soft-2/50 to-transparent opacity-85 group-hover:opacity-100 transition-opacity duration-500 rounded-md -z-10" />
 
-                                    {/* Icon / Illustration */}
-                                    <div className="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-500 ease-out py-2 relative">
-                                        <div className="absolute inset-0 bg-electric-cyan/20 blur-[40px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                        <img src={item.icon} alt={item.title} className="w-full h-full object-contain drop-shadow-lg" />
+                                    {/* Illustration Container */}
+                                    <div className="w-32 h-32 md:w-36 md:h-36 flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 ease-out relative">
+                                        <div className="absolute inset-0 bg-link/5 blur-[25px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                        <img src={item.icon} alt={item.title} className="w-full h-full object-contain filter drop-shadow-sm" />
                                     </div>
 
-                                    {/* Text Content */}
-                                    <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-[#00D2FF] transition-colors tracking-tight leading-tight">
+                                    {/* Card Header */}
+                                    <h3 className="text-display-sm text-ink group-hover:text-link transition-colors duration-200 tracking-tight leading-tight">
                                         {item.title}
                                     </h3>
                                 </div>

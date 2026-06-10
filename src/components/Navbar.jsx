@@ -25,31 +25,32 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#050A14]/90 backdrop-blur-lg border-b border-white/5 py-2' : 'bg-transparent py-6'}`}>
+        <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-canvas/90 backdrop-blur-md border-b border-hairline py-3 shadow-level-2' : 'bg-transparent py-5'}`}>
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between h-10">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center gap-2">
-                        <span className="text-white text-2xl font-bold tracking-tight">Merger<span className="text-[#00D2FF]">Ware</span></span>
+                        <span className="text-ink text-xl font-semibold tracking-tight">Merger<span className="text-link">Ware</span></span>
                     </div>
 
                     {/* Desktop Menu */}
                     <div className="hidden xl:block">
-                        <div className="ml-10 flex items-center space-x-6">
+                        <div className="ml-10 flex items-center space-x-2">
                             {navLinks.map((link) => (
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    className="text-gray-300 hover:text-white hover:bg-white/5 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 uppercase tracking-wide text-[11px] lg:text-xs"
+                                    className="text-body hover:text-ink hover:bg-canvas-soft-2 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200"
                                 >
                                     {link.name}
                                 </a>
                             ))}
+                            <span className="h-4 w-px bg-hairline mx-2" />
                             <a
                                 href="#demo"
-                                className="bg-[#00D2FF] text-[#050A14] hover:bg-[#33efff] px-6 py-2.5 rounded-md text-xs font-extrabold tracking-wider uppercase transition-colors duration-200 shadow-[0_0_15px_rgba(0,210,255,0.4)]"
+                                className="bg-primary text-on-primary hover:bg-black/90 px-4 py-1.5 rounded-sm text-sm font-medium transition-colors duration-200 shadow-level-1 inline-flex items-center justify-center h-8"
                             >
-                                REQUEST DEMO
+                                Request Demo
                             </a>
                         </div>
                     </div>
@@ -58,9 +59,9 @@ const Navbar = () => {
                     <div className="-mr-2 flex xl:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-white/10 focus:outline-none"
+                            className="inline-flex items-center justify-center p-2 rounded-sm text-body hover:text-ink hover:bg-canvas-soft-2 focus:outline-none"
                         >
-                            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
                         </button>
                     </div>
                 </div>
@@ -73,14 +74,14 @@ const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="xl:hidden bg-[#050A14] border-b border-white/10 shadow-xl overflow-hidden"
+                        className="xl:hidden bg-canvas border-b border-hairline shadow-level-3 overflow-hidden"
                     >
                         <div className="px-4 pt-2 pb-6 space-y-1">
                             {navLinks.map((link) => (
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    className="text-gray-300 hover:text-white hover:bg-white/5 block px-3 py-3 rounded-md text-base font-medium border-l-2 border-transparent hover:border-[#00D2FF] transition-all"
+                                    className="text-body hover:text-ink hover:bg-canvas-soft-2 block px-3 py-2.5 rounded-sm text-base font-medium border-l-2 border-transparent hover:border-link transition-all"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}
@@ -88,10 +89,10 @@ const Navbar = () => {
                             ))}
                             <a
                                 href="#demo"
-                                className="w-full text-center block bg-[#00D2FF] text-[#050A14] px-5 py-4 rounded-md text-sm font-bold mt-6 tracking-wider uppercase"
+                                className="w-full text-center block bg-primary text-on-primary px-5 py-3 rounded-sm text-sm font-semibold mt-6 shadow-level-2"
                                 onClick={() => setIsOpen(false)}
                             >
-                                REQUEST DEMO
+                                Request Demo
                             </a>
                         </div>
                     </motion.div>
